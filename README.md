@@ -15,4 +15,3 @@
 #Then I am shown 300x200 pixel image that matches the criteria I entered.
 
 
-#receipt alot help from tudor, not much though.....

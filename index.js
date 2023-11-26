@@ -5,7 +5,15 @@ inquirer.prompt ([
 { name: "background", type: "input", message:" Please provide the background color"},
 ])
 
-
+return() {
+return inquirer
+      .prompt([
+        {
+          type: 'input',
+          name: 'name',
+          message: 'Please enter your name',
+        },
+    }
 
 .then (function(answers)  {
  console.log( answers)
@@ -13,3 +21,4 @@ inquirer.prompt ([
 
 
 
+post.printMetaData();
