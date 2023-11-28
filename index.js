@@ -1,24 +1,48 @@
 const inquirer = require("inquirer")
-inquirer.prompt ([
-{ name: "color", type: "input", message:" Please provide the text color"},
-{ name: "shape", type: "input", message:" Please provide the shape"},
-{ name: "background", type: "input", message:" Please provide the background color"},
-])
+const {Triangle, Circle, Square} = require("./lib/shapes")
+// inquirer.prompt ([
+// { name: "color", type: "input", message:" Please provide the text color"},
+// { name: "shape", type: "input", message:" Please provide the shape"},
+// { name: "background", type: "input", message:" Please provide the background color"},
+// ])
 
-return() {
-return inquirer
+
+inquirer
       .prompt([
         {
           type: 'input',
-          name: 'name',
-          message: 'Please enter your name',
+          name: 'text',
+          message: 'Please enter 3 characters for your text',
         },
-    }
+        {
+          type: 'input',
+          name: 'textColor',
+          message: 'Please enter the color of the text',
+        },
 
-.then (function(answers)  {
- console.log( answers)
-})
+        {
+          type: 'list',
+          name: 'shape',
+          message: 'Please chose either circle, triangle or square for the shape of your svg',
+          choices: ["circle", "triangle", "square"]
+        },
+       
+        {
+          type: 'input',
+          name: 'shapeColor',
+          message: 'Please enter the color of the shape',
+        },
+
+      ])
+    
+    .then (function(answers)  {
+      console.log("answers~~ ",answers)
+    //   if(answers.shape === "circle"){
+    //   new Circle(answers.shapeColor)
+    // }
+    })
+ 
 
 
 
-post.printMetaData();
+// post.printMetaData();
