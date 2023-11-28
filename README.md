@@ -1,17 +1,10 @@
 # SVG-Logo-Maker_AJ
 
-#GIVEN the command line accepts user input
-#WHen promted for a text
-#User enters 3 characters
-#Prompted for text color
-#The User will enter a color keyword (OR a hexadecimal number)
-#When prompted for a shape
-#Will be prompted with 3 shapes to choose from (circle, triangle, or square)
-#When prompted for the shape's color
-#Then I can enter a color or keyword (Or a hexadecimal number)
-#When all 4 inputs have been entered and SVG file is created named 'logo.svg'
-#Then the output text "Generated logo.svg" is printed in the command line
-#When I open the 'logo.svg' file in a browser
-#Then I am shown 300x200 pixel image that matches the criteria I entered.
+The motivation for this code is for the user to create a simple logo for their project.
 
+This project is a work in progress, I am still learning how to incoporate the testing and I not finished.   I learned more about functions and how to incorporate tests.
+
+What makes this project stand out is when prompted for a shape, color and 3 charactors, it prints out all 3.  
+
+I am submitting what I have so far. 
 
